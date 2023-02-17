@@ -3,9 +3,21 @@
 
 {{-- vado in serire il contenuto delimitato da section --}}
 @section('content')
-<div class="container">
-    <div class="row">
-        <h1>comics</h1>
+<div id="comics">
+    <div class="container">
+        <div class="row">
+            @foreach ($comics as $comic)
+                {{-- tra parentesi quadre metto il nome del parametro con il relativo valore --}}
+                <div class="card">
+                    <div class="card-image">
+                        <img src="{{$comic['thumb']}}" alt="">
+                    </div>
+                    <div class="card-title">
+                        <span>{{ $comic['title'] }}</span>
+                    </div>
+                </div>
+            @endforeach
+        </div>
     </div>
 </div>
 @endsection
