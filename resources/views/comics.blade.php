@@ -23,5 +23,6 @@
             <button class="btn-light-blue">Load more</button>
         </div>
     </div>
+    @include('partials.comics-links')
 </div>
 @endsection
