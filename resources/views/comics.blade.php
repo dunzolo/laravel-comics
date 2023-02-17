@@ -7,15 +7,17 @@
     <div class="container">
         <span class="top-label-light-blue">Current series</span>
         <div class="row">
-            @foreach ($comics as $comic)
+            @foreach ($comics as $key => $comic)
                 {{-- tra parentesi quadre metto il nome del parametro con il relativo valore --}}
                 <div class="card">
-                    <div class="card-image">
-                        <img src="{{$comic['thumb']}}" alt="">
-                    </div>
-                    <div class="card-title">
-                        <span>{{ $comic['title'] }}</span>
-                    </div>
+                    <a href="/comics/{{$key}}">
+                        <div class="card-image">
+                            <img src="{{$comic['thumb']}}" alt="">
+                        </div>
+                        <div class="card-title">
+                            <span>{{ $comic['title'] }}</span>
+                        </div>
+                    </a>
                 </div>
             @endforeach
         </div>
