@@ -2,6 +2,7 @@
 @use './partials/jumbotron.scss';
 @use './partials/comics.scss';
 @use './partials/comics-links.scss';
+@use './partials/detail.scss';
 @use './partials/footer.scss';
 @import '~bootstrap/scss/bootstrap';
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&family=Roboto:wght@300&display=swap');
@@ -18,6 +19,11 @@ body {
 
 .container {
     max-width: 1200px;
+    margin: 0 auto;
+}
+
+.container-small {
+    max-width: 850px;
     margin: 0 auto;
 }
 
