@@ -1,0 +1,40 @@
+footer {
+    .top-footer {
+        background-image: url('/resources/img/footer-bg.jpg');
+        background-size: cover;
+
+        .container {
+            background-image: url('/resources/img/dc-logo-bg.png');
+            background-repeat: no-repeat;
+            background-position: right;
+
+            .footer-links {
+                padding: 1rem 0;
+                display: flex;
+
+                .links {
+                    margin-right: 2rem;
+
+                    ul {
+                        list-style-type: none;
+                        padding: 0;
+
+                        li a {
+                            color: grey;
+
+                            &:hover,
+                            &:active {
+                                color: white
+                            }
+                        }
+                    }
+
+                    h2 {
+                        color: white;
+                        padding: 1rem 0;
+                    }
+                }
+            }
+        }
+    }
+}
