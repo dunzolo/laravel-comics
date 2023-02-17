@@ -5,6 +5,7 @@
 @section('content')
 <div id="comics">
     <div class="container">
+        <span class="top-label-light-blue">Current series</span>
         <div class="row">
             @foreach ($comics as $comic)
                 {{-- tra parentesi quadre metto il nome del parametro con il relativo valore --}}
@@ -17,6 +18,9 @@
                     </div>
                 </div>
             @endforeach
+        </div>
+        <div class="bottom-btn">
+            <button class="btn-light-blue">Load more</button>
         </div>
     </div>
 </div>
