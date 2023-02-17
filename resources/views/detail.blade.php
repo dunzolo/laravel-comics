@@ -5,7 +5,7 @@
     <div class="bar-light-blue">
         <div class="container-small">
             <div class="cover">
-                <span class="comic-book">comic book</span>
+                <span class="comic-book">{{ $single_comic['type']}}</span>
                 <img src="{{$single_comic['thumb']}}" alt="cover">
                 <span class="gallery">view gallery</span>
             </div>
@@ -37,7 +37,7 @@
                 </div>
             </div>
         </div>
-        <div class="row">
+        <div class="row pb-3">
             <div class="col-6">
                 <table class="table">
                     <thead>
