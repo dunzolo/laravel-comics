@@ -3,7 +3,7 @@
         <div class="row">
             <div class="logo col-2">
                 <a href="/">
-                    <img src="{{Vite::asset('resources/img/dc-logo.png')}}" alt="">
+                    <img src="{{Vite::asset('resources/img/dc-logo.png')}}" alt="dc-logo">
                 </a>
             </div>
             <div class="col-10">
