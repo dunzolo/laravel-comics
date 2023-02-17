@@ -57,19 +57,37 @@
             </div>
         </div>
     </div>
-    {{-- <div class="bottom-footer">
+    <div class="bottom-footer">
         <div class="container">
-            <a href="#" class="login">SIGN-UP NOW</a>
-            <nav>
-                <h2>FOLLOW US</h2>
-                <ul>
-                    <li v-for="(item, index) in socials" :key="index">
-                        <a href="/">
-                            <img :src="`/${item}`" alt="">
-                        </a>
-                    </li>
-                </ul>
-            </nav>
+            <div class="row">
+                <div class="col-auto">
+                    <div class="login">
+                        <a href="#">SIGN-UP NOW</a>
+                    </div>
+                </div>
+                <div class="col-auto">
+                    <div class="social">
+                        <h2>FOLLOW US</h2>
+                        <ul>
+                            <li>
+                                <a href="/"><img src="{{Vite::asset('resources/img/footer-facebook.png')}}" alt="facebbok"></a>
+                            </li>
+                            <li>
+                                <a href="/"><img src="{{Vite::asset('resources/img/footer-twitter.png')}}" alt="twitter"></a>
+                            </li>
+                            <li>
+                                <a href="/"><img src="{{Vite::asset('resources/img/footer-youtube.png')}}" alt="you-tube"></a>
+                            </li>
+                            <li>
+                                <a href="/"><img src="{{Vite::asset('resources/img/footer-pinterest.png')}}" alt="pinterest"></a>
+                            </li>
+                            <li>
+                                <a href="/"><img src="{{Vite::asset('resources/img/footer-periscope.png')}}" alt="periscope"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div> --}}
+    </div>
 </footer>
